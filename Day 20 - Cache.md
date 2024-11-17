@@ -168,3 +168,27 @@ public Product getProduct(String productId) {
     return productRepository.findById(productId).orElseThrow();
 }
 ```
+## **7. Monitoring and Metrics**
+
+- **Cache Hit Ratio:** Measures the efficiency of the cache.
+- **Eviction Rate:** Tracks the frequency of cache evictions.
+- **Latency Metrics:** Ensures that cache retrieval is faster than the source.
+
+---
+
+## **8. Benefits Recap**
+
+### **Performance**
+
+- Faster responses.
+- Reduced backend load.
+
+### **Scalability**
+
+- Handles higher traffic.
+
+### **Reliability**
+
+- Graceful degradation during failures.
+
+Caching is a fundamental optimization strategy in microservices that, when used wisely, significantly improves performance, scalability, and fault tolerance.
