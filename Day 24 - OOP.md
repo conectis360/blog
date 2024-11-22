@@ -27,3 +27,56 @@ class Car {
     }
 }
 ```
+-  Here, the `color` property is private, but we can access or modify it using public methods.
+
+#### b) **Inheritance**
+
+- **Definition**: Inheritance allows one class (child class) to inherit properties and methods from another class (parent class).
+- **Purpose**: To promote code reuse and represent relationships between objects.
+- **Example**:
+
+```java
+class Animal {
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("The dog barks.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.eat(); // Inherited method
+        dog.bark(); // Dog-specific method
+    }
+}
+```
+
+Output:
+```bash
+This animal eats food.
+The dog barks.
+```
+#### c) **Polymorphism**
+
+- **Definition**: Polymorphism means "many forms." It allows objects to be treated as instances of their parent class while behaving according to their actual implementation.
+- **Types**:
+    1. **Compile-time Polymorphism (Method Overloading)**:
+        - Same method name, different parameter lists.
+```java
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    double add(double a, double b) {
+        return a + b;
+    }
+}
+```
+
