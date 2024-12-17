@@ -1,1 +1,3 @@
-TESTE
+Imagine you're trying to order food from a complex restaurant with many different departments (kitchen, bar, etc.). Instead of dealing with each department directly, you have a waiter who acts as a single point of contact. You tell the waiter what you want, and they handle the communication with the different departments to fulfill your order.
+
+The waiter is like a facade in software design. It simplifies a complex system by providing a simple interface to interact with it. Instead of dealing with each component directly, you interact with the facade, which handles the complexities behind the scenes. This makes the system easier to understand and use.
